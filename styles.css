@@ -1,0 +1,304 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/travel-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space between nav links and search bar */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style for the search container and input elements */
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between search input and buttons */
+  }
+  
+  #searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Adjust the width of the search bar */
+    font-size: 14px;
+  }
+  
+  /* Styling the buttons */
+  .search-container input[type="button"], 
+  .search-container input[type="reset"] {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50; /* Customize button background */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container input[type="button"]:hover,
+  .search-container input[type="reset"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Align the search bar and buttons to the right */
+  .search-container {
+    margin-left: auto; /* Push the search container to the right */
+  }
+  
+    
+  input[type=text] {
+    margin: 8px 0;
+    padding: 8px;
+    border: none;
+    float: left;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 8px;
+    cursor: pointer;
+  }
+  
+  #results {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .result-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .result-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero-section {
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    color: white; 
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.75rem; 
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-weight: bold;
+  }
+  
+  .hero-section p {
+    font-size: .75rem; 
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 1rem;
+    }
+    
+    .hero-section p {
+        font-size: 0.6rem; 
+    }
+  }
+  
+  .social-icons {
+    position: fixed; 
+    top: 60%; 
+    left: 10px; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  
+  .social-icons a img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.2); 
+  }
+  
+  .about-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  .about-us-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+  
+  .about-us-section h1 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .about-us-section p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .about-us-section li {
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-section h1 {
+      font-size: 1rem;
+    }
+  
+    .about-us-section p {
+      font-size: 0.6rem;
+    }
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    color: white;
+  }
+  
+  .contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .contact-form form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for inputs */
+    color: #333;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .form-actions {
+    text-align: center;
+  }
+  
+  .form-actions input[type="submit"] {
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-actions input[type="submit"]:hover {
+    background-color: #b38300;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 30px;
+      max-width: 90%;
+    }
+  
+    .contact-form h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group input, .form-group textarea {
+      font-size: 0.9rem;
+    }
+  
+    .form-actions input[type="submit"] {
+      font-size: 0.9rem;
+    }
+  }
+  

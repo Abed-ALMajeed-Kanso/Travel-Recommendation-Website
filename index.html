@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Travel Bloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for recommendations...">
+            <input type="button" value="Search" onclick="search()">
+            <input type="reset" value="Reset" onclick="resetSearch()">   
+        </div>
+        <div id="results"></div>
+    </div>
+    
+    
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Travel Bloom</h1>
+            <p>Your gateway to the best travel recommendations across the world!</p>
+        </div>
+    </section>
+    
+
+    <section class="social-icons">
+        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </section>    
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
